@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ДомУчет</title>
+    
+ 
+
+
+    
+    
+    <!-- nitfy CSS -->
+    <!-- Bootstrap Core CSS -->
+   
+    <link href="assets/nifty/template/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="assets/nifty/template/css/nifty.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/textInputEffects/fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- nitfy CSS -->
+    <link href="assets/nifty/template/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/nifty/template/plugins/morris-js/morris.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/nifty/template/plugins/switchery/switchery.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/nifty/template/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+    
+     <!-- Custom CSS -->
+    <link href="assets/main/css/scrolling-nav.css" rel="stylesheet">
+    <link href="assets/main/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/textInputEffects/css/set2.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/WOW/css/libs/animate.css" rel="stylesheet" type="text/css"/>
+    
+     <!-- nitfy js -->
+     <link href="assets/nifty/template/plugins/pace/pace.min.css" rel="stylesheet" type="text/css"/>
+     <script src="assets/nifty/template/plugins/pace/pace.min.js" type="text/javascript"></script>
+      <!-- js custom -->
+    <script src="assets/WOW/dist/wow.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
+    
+     <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    
+     <!-- Bootstrap Material Design -->
+  <link href="assets/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" type="text/css"/>
+    
+    
+    
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+     <script>new WOW().init();</script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-bg" role="navigation">
+        
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="logo" src="#" alt="ДомУчет"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                     <li class="active">
+                        <a class="page-scroll" href="#home">Главная</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Компания</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Продукция</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div id="home"></div>
+     
+       <!-- GOOGLE MAPS -->
+       <div class="container-map">
+          
+           <div id="map_canvas" style="width:100%; "></div>
+           <div class="over-map-company-info">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-12 wow slideInDown">
+                           <h3 class="text-edge proximaBold" style="margin-left: 5px;">ООО &quot;ЖИЛКОМВЕСТ&quot;</h3>
+                       </div>
+                       <div class="col-xs-12  wow slideInRight">
+                           <h5 class="text-map-bg purple">Ваш менеджер:</h5>
+                           <h5 class="text-map-bg text-map-description"> Фарзуллаева Елена Валерьевна</h5>                     
+                       </div>
+                         <div class="col-xs-12  wow slideInLeft ">
+                           <h5 class="text-map-bg blue">Контактый номер:</h5>
+                           <h5 class="text-map-bg text-map-description">55-27-96</h5>                     
+                       </div>
+                        <div class="col-xs-12  wow slideInRight">
+                           <h5 class="text-map-bg green">Эл.почта:</h5>
+                           <h5 class="text-map-bg text-map-description">jilvest118@yandex.ru</h5>                     
+                       </div>
+                       
+                   </div>
+               </div>
+           </div>
+           <div class="over-map">
+               <div class="container">
+                  
+                       <div  class="pull-right col-xs-8  col-sm-8  col-md-8  col-lg-6 ">                                                        
+                           
+                           
+                           
+                            <span class=" pull-right input input--kozakura  wow bounceInDown">
+					<input id="advert-address" class="input__field input__field--kozakura" type="text"  />
+					<label class="input__label input__label--kozakura" for="input-9">
+						<span id="input-address" class="input__label-content input__label-content--kozakura" data-content="Ваш адрес">Ваш адрес</span>
+					</label>
+					<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
+					</svg>
+                            </span>
+                           
+                           
+          
+                           
+                       </div>
+                  
+               </div>  
+           </div>
+           <div class="over-map-chat">
+               <div class="container" style="margin-left: 0px;">
+            <div class="row">
+              
+                <div class="hidden-xs col-sm-6 col-md-4 col-lg-4" >
+                   
+                                        <!--Chat Widget-->
+					        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+					        <div class="panel">
+					            <!--Chat widget body-->
+					            <div id="demo-chat-body" class="collapse in">
+                                                         <div id="chat-body" class="nano" >
+					                    <div class="nano-content  pad-all">
+					                       <!-- Timeline -->
+							<!--===================================================-->
+							<div class="timeline">
+					
+								<!-- Timeline header -->
+                                                                <div class="timeline-header pull-left" style="margin-top: 0px;">
+									<div class="timeline-header-title bg-purple">Сегодня</div>
+								</div>
+								
+								<div class="timeline-entry">
+									<div class="timeline-stat">
+										<div class="timeline-icon bg-info"><i class="fa fa-envelope fa-lg"></i></div>
+										<div class="timeline-time">Сейчас</div>
+									</div>
+									<div class="timeline-label">
+										<h4 class="text-info text-lg">ДомУчет</h4>
+                                                                                <p>Здравствуйте, Ваш дом не зарегистрирован в системе, <a class="page-scroll" href="#contact">свяжитесь</a> с нами для получения подробной информации информации.</p>
+									</div>
+								</div>
+                                                                
+                                                                <div class="timeline-entry">
+									<div class="timeline-stat">
+										<div class="timeline-icon bg-info"><i class="fa fa-envelope fa-lg"></i></div>
+										<div class="timeline-time">25 декабря 2015</div>
+									</div>
+									<div class="timeline-label">
+                                                                            <h4 class="text-info text-lg">ДомУчет</h4>
+                                                                            <p>Портал ДомУчет является проектом компании Солитон.
+                                                                                Фирма Cолитон занимается реализацией систем, основанных на технологии беспроводной передачи телематических данных с помощью сигнала повышенной устойчивости.
+
+                                                                                На самом деле и простыми словами это способ отправить данные с ваших домашних приборов учета потребления ресурсов гораздо дешевле, чем у, существовавших до этого, аналогов.
+                                                                                Кроме того, данная технология передачи потребляет низкое количество электроэнергии, заряда 1 пальчиковой батареи хватает на 10 лет, это почти в 2 раза больше чем межповерочный интервал для счетчиков.
+                                                                                Все оборудование производится в России, поэтому скачки курса доллара никаким образом не отражаются на стоимости приборов, это позволяет держать беспрецедентно низкую стоимость для приборов этого класса.
+
+                                                                            </p>
+									</div>
+								</div>
+                                                                
+                                                                <div class="timeline-entry">
+									<div class="timeline-stat">
+										<div class="timeline-icon bg-mint"><i class="fa fa-thumbs-up fa-lg"></i></div>
+										<div class="timeline-time">12 декабря 2015</div>
+									</div>
+									<div class="timeline-label">
+										<img class="img-xs img-circle" src="assets/nifty/template/img/av2.png" alt="Profile picture">
+										<a href="#" class="btn-link text-semibold">Администратор</a> В настояще время портал находится в стадии разработки.
+									</div>
+								</div>
+                                                                
+								
+							</div>
+							<!--===================================================-->
+							<!-- End Timeline -->
+					                    </div>
+					                </div>					                
+					            </div>
+					        </div>
+					        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+					        <!--End Chat Widget-->
+           
+                </div>
+                <div class="col-md-8 col-lg-8">
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+           </div>
+           
+       </div>
+        <!-- END GOOGLE MAPS -->  
+        
+        <!-- Intro Section -->
+        <section id="intro" class="intro-section" style="overflow: hidden">
+            <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4"></div>
+            <div class="col-sm-6 col-md-8 col-lg-8">
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 col-sm-3 col-lg-2">
+                         <div class="panel media pad-all">
+                            <div class="media-left">
+                                <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                                    <i class="fa fa-user fa-2x"></i>
+                                </span>
+                            </div>
+
+                            <div class="media-body">
+                                <p class="text-2x mar-no text-thin">56</p>
+                                <p class="text-muted mar-no">Жильцов зарегистрировано</p>
+                            </div>
+                        </div>
+                        <div class="panel media pad-all">
+                            <div class="media-left">
+                                <span class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+                                    <i class="fa fa-comment fa-2x"></i>
+                                </span>
+                            </div>
+
+                            <div class="media-body">
+                                <p class="text-2x mar-no text-thin">12</p>
+                                <p class="text-muted mar-no">Активных обсуждений</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-sm-3 col-lg-2">
+                         <div class="panel media pad-all">
+                            <div class="media-left">
+                                <span class="icon-wrap icon-wrap-sm icon-circle bg-purple">
+                                    <i class="fa fa-bell fa-2x"></i>
+                                </span>
+                            </div>
+
+                            <div class="media-body">
+                                <p class="text-2x mar-no text-thin">6</p>
+                                <p class="text-muted mar-no">Непрочитанных уведомлений</p>
+                            </div>
+                        </div>
+                         <div class="panel media pad-all">
+                            <div class="media-left">
+                                <span class="icon-wrap icon-wrap-sm icon-circle bg-mint">
+                                    <i class="fa fa-bar-chart fa-2x"></i>
+                                </span>
+                            </div>
+
+                            <div class="media-body">
+                                <p class="text-2x mar-no text-thin">35%</p>
+                                <p class="text-muted mar-no">Участия в обсуждениях</p>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+   
+    
+    <!--parallax 2 -->
+    <section id="about" class="bg-3 text-center" style="padding-top: 50px;">
+  <h1>Компания</h1>
+</section>
+    
+    <!-- About Section -->
+    <section  class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="divider"></div>
+
+  <!--parallax 1 -->
+<section id="services" class="bg-1 text-center" style="padding-top: 50px;">
+  <h1>Продукция</h1>
+</section>
+<!--/parallax 1-->
+
+ <div class="divider"></div>
+
+    <!-- Services Section -->
+    <section  class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+  
+<section id="contact" class="bg-2" style="padding-top: 50px;">
+  <div class="col-sm-10 col-sm-offset-1 text-center">
+  
+    <h1>Контакты</h1>
+    
+  </div>
+</section>
+
+<div class="divider"></div>
+
+    <!-- Contact Section -->
+    <section  class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+<!-- nitfy -->
+    <!-- jQuery -->
+    <script src="assets/nifty/template/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/nifty/template/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    
+    <script src="assets/nifty/template/plugins/fast-click/fastclick.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/js/nifty.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/plugins/morris-js/morris.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/plugins/morris-js/raphael-js/raphael.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/plugins/skycons/skycons.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/plugins/switchery/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+    <script src="assets/nifty/template/js/nifty.min.js" type="text/javascript"></script>
+    
+    
+    
+    <!-- other JavaScript -->
+    <script src="assets/bootstrap/js/jquery.easing.min.js"></script>
+    
+    <script src="assets/main/js/scrolling-nav.js"></script>
+    <script src="assets/paralax/js/paralax.js" type="text/javascript"></script>
+    <script src="assets/geolocator/src/geolocator.min.js" type="text/javascript"></script>
+    <script src="assets/main/js/maps.js" type="text/javascript"></script>
+    <script src="assets/textInputEffects/js/classie.js" type="text/javascript"></script>
+    <script src="assets/textInputEffects/js/inputEffects.js" type="text/javascript"></script>
+    <script src="assets/main/js/main.js" type="text/javascript"></script>
+    
+    
+    <script src="assets/bootstrap-material-design/dist/js/material.min.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-material-design/dist/js/ripples.min.js" type="text/javascript"></script>
+    
+    
+    
+   
+</body>
+
+</html>
